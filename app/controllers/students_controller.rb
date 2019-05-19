@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
   
   def create 
     Post.create(params[:student])
-    redirect_to posts_path
+    redirect_to students_path
   end
 
 end
