@@ -12,6 +12,8 @@ class StudentsController < ApplicationController
   end
   
   def create 
+    Post.create(params[:student])
+    redirect_to posts_path
   end
 
 end
